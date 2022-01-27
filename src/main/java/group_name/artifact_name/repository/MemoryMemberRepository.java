@@ -1,6 +1,7 @@
 package group_name.artifact_name.repository;
 
 import group_name.artifact_name.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 

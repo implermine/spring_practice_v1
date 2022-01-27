@@ -3,6 +3,8 @@ package group_name.artifact_name.service;
 import group_name.artifact_name.domain.Member;
 import group_name.artifact_name.repository.MemberRepository;
 import group_name.artifact_name.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,6 +13,7 @@ public class MemberService {
 
     private final MemberRepository memberRepository;
 
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
