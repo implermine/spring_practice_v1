@@ -1,5 +1,8 @@
 package group_name.artifact_name.domain;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Member {
     private Long id;
     private String name;
